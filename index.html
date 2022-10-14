@@ -10,52 +10,85 @@
   </head>
   <body>
     <div class="main">
-      <div class="image-logo">
-        <h1>Hi</h1>
+      <div class="background_image">
+        <div class="odinImage">
+          <div class="semi-transparent">
+            <img src="logo.png" alt="Odin Logo" height="100px" />
+            <h1>ODIN</h1>
+          </div>
+        </div>
+        <div class="forFooter">
+          <p class="p-footer">
+            Photo by
+            <a class="a-footer" href="https://unsplash.com/photos/25xggax4bSA"
+              >Halie West</a
+            >
+          </p>
+        </div>
       </div>
-      <div class="form-container">
+      <div class="form-content">
         <div class="first">
-          <h2>
-            This is not a real online service! You know you need something<br />
-            like this in your life to help you realize your deepest dreams.<br />Sign
-            up <em>now</em> to get started. <br /><br />
+          <h3>
+            This is not a real online service! You know you need something
+            <br />
+            like this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up <em>now</em> to get started. <br /><br />
             You <em>know</em> you want to.
-          </h2>
+          </h3>
         </div>
-        <div class="second">
-          <h3>Let's do this!</h3>
-          <form action="" method="get" class="form-main-div">
-            <div class="form-divs">
-              <div class="form-div">
-                <label for="first">First Name</label>
-                <input type="text" id="first" name="first" />
+        <form action="" method="get">
+          <div class="second">
+            <h3 style="margin-left: 50px; padding-top: 20px">Let's do this!</h3>
+            <div class="form-main-div">
+              <div class="form-divs">
+                <div class="form-div">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="first_name" />
+                </div>
+                <div class="form-div">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="form-div">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                  <p id="error">*passwords do not match</p>
+                </div>
               </div>
-              <div class="form-div">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
-              </div>
-              <div class="form-div">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
+              <div class="form-divs">
+                <div class="form-div">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="last_name" />
+                </div>
+                <div class="form-div">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" />
+                </div>
+                <div class="form-div">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    required
+                  />
+                </div>
               </div>
             </div>
-            <div class="form-divs">
-              <div class="form-div">
-                <label for="last">Last Name</label>
-                <input type="text" id="last" name="last" />
-              </div>
-              <div class="form-div">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" />
-              </div>
-              <div class="form-div">
-                <label for="c-password">Confirm Password</label>
-                <input type="c-password" id="c-password" name="c-password" />
-              </div>
-            </div>
-          </form>
+          </div>
+          <div class="third">
+            <button type="submit" class="btn">Create Account</button>
+          </div>
+        </form>
+        <div class="hyperlink">
+          <p>Already have an account? <a class="login" href="">Log in</a></p>
         </div>
-        <div class="third"></div>
       </div>
     </div>
   </body>
